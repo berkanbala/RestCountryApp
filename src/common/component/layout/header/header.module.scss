@@ -7,7 +7,15 @@
   list-style-type: none;
   top: 0;
   padding: 20px 60px;
-  background-color: #3d414e;
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    #496e9a,
+    #496e9a,
+    #496e9a,
+    #496e9a,
+    #496e9a
+  );
   box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
   transition: background-color 1s ease-in-out;
 

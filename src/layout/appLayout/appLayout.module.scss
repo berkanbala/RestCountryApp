@@ -1,2 +1,28 @@
 .container {
+  .header {
+    height: 100px;
+  }
+
+  .outlet {
+    background-image: linear-gradient(
+      to right top,
+      #91a7e0,
+      #8fa7e1,
+      #8da7e3,
+      #8ba8e4,
+      #89a8e5,
+      #84aae6,
+      #7eabe7,
+      #78ade8,
+      #6eb1e8,
+      #65b4e7,
+      #5db7e5,
+      #57bae2
+    );
+    min-height: calc(100vh - 100px);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+  }
 }

@@ -1,26 +1,36 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
+    "strictNullChecks": false,
+    "target": "es5",
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "outDir": "build",
     "module": "esnext",
     "moduleResolution": "node",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "noImplicitAny": true,
+
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "allowJs": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx"
+    "baseUrl": "./src",
+    "paths": {
+      "@/app/": ["./app/"],
+      "@/common/": ["./common/"],
+      "@/custom/": ["./custom/"],
+      "@/assets/": ["./assets/"]
+    },
+    "incremental": true
   },
-  "include": [
-    "src"
-  ]
+
+  "include": ["./src/**/*"],
+  "exclude": ["node_modules"]
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./header.module.scss";
 import classNames from "classnames";
 
@@ -7,9 +8,11 @@ export default function Header(props: Props) {
     <div className={classNames(className, styles.container)}>
       <ul>
         <li>
-          <h1>Where in the world?</h1>
+          <Link to="/">Where in the world?</Link>
         </li>
-        <li>☼-☾</li>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
       </ul>
     </div>
   );
