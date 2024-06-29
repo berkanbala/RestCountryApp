@@ -1,3 +1,5 @@
+@import "../../common/assets/styles/variable.scss";
+
 .container {
   .header {
     height: 100px;
@@ -6,18 +8,18 @@
   .outlet {
     background-image: linear-gradient(
       to right top,
-      #91a7e1,
-      #8fa7e2,
-      #8da7e3,
-      #8ba8e4,
-      #89a8e5,
-      #84aae6,
-      #7eabe7,
-      #78ade9,
-      #6eb1e1,
-      #65b4e2,
-      #5db7e3,
-      #57bae4
+      $layout,
+      $layout1,
+      $layout2,
+      $layout3,
+      $layout4,
+      $layout5,
+      $layout6,
+      $layout7,
+      $layout8,
+      $layout9,
+      $layout10,
+      $layout11
     );
     min-height: calc(100vh - 100px);
     display: grid;
